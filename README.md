@@ -6,8 +6,7 @@
 ### model_cnn.export('saved_model')
 ### converter = tf.lite.TFLiteConverter.from_saved_model('saved_model')
 ### tflite_model = converter.convert() 
-### with open('converted_model.tflite', 'wb') as f:
-###  /t/t/t/ttf.write(tflite_model)
+### with open('converted_model.tflite', 'wb') as f: tf.write(tflite_model)
 4. Code in raspberrypi4: You just run Raspberry_code/main.py. Remember that: in your raspberrypi4 must have the file "converted_model.tflite" which converted in step 3.
 5. See the result: You can see the result in Demo/Demo.mp4.
 ## * NOTE: File cascade.xml must appear in all folders I provided.
